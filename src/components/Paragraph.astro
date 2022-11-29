@@ -1,1 +1,12 @@
-<p>Voici mon composant paragraphe.</p>
+---
+export interface Props {
+  text: string;
+  color: string;
+}
+
+const props = Astro.props;
+---
+
+<p style={{ color: props.color }}>
+  {props.text}
+</p>
