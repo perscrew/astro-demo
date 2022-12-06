@@ -7,6 +7,4 @@ export interface Props {
 const props = Astro.props;
 ---
 
-<p style={{ color: props.color }}>
-  {props.text}
-</p>
+<p style={{ color: props.color }} set:html={props.text} />

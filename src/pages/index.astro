@@ -1,11 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
 import Paragraph from "../components/Paragraph.astro";
+import VideoGames from "../components/VideoGames.astro";
+import Layout from "../layouts/Layout.astro";
+
+const firstParagraph = { text: "<strong>Hello World ! </strong>", color: "blue" };
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <h1>Astro Demo</h1>
-    <Paragraph text="mon composant paragraphe" color="blue" />
+    <Paragraph text={firstParagraph.text} color={firstParagraph.color} />
+    <VideoGames />
   </main>
 </Layout>
