@@ -8,5 +8,7 @@ const { title } = Astro.props;
 
 <article>
   <h2>{title}</h2>
+  <slot name="before-content" />
   <slot />
+  <slot name="after-content" />
 </article>

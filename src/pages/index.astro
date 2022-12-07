@@ -16,7 +16,9 @@ const firstParagraph = {
     <Paragraph text={firstParagraph.text} color={firstParagraph.color} />
     <VideoGames />
     <ContentBlock title="bloc de contenu">
+      <img slot="before-content" src="https://astro.build/assets/press/full-logo-light.svg" width="300" height="99" >
       <p>Un paragraphe injecté dans mon bloc de contenu.</p>
+      <p slot="after-content">Apparaitra après le contenu principal</p>
     </ContentBlock>
   </main>
 </Layout>
